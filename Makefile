@@ -8,7 +8,7 @@ MAKEFLAGS += --no-builtin-rules
 # try with 36.40.3-full
 CI_RENOVATE_DOCKER := renovate/renovate:36.40.3-slim
 
-DOCKER_HELM_UNITITEST_IMAGE := helmunittest/helm-unittest:3.12.0-0.3.3
+DOCKER_HELM_UNITITEST_IMAGE := helmunittest/helm-unittest:3.12.3-0.3.5
 
 LOG_LEVEL := debug
 
