@@ -4,9 +4,9 @@ SHELL = /bin/sh -o pipefail
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
 
-# CI_RENOVATE_IMAGE := renovate/renovate:37.33.3-full
+# CI_RENOVATE_DOCKER := renovate/renovate:37.33.3-full
 # try with 36.40.3-full
-CI_RENOVATE_IMAGE := renovate/renovate:36.40.3-slim
+CI_RENOVATE_DOCKER := renovate/renovate:36.40.3-slim
 
 DOCKER_HELM_UNITITEST_IMAGE := helmunittest/helm-unittest:3.12.0-0.3.3
 
@@ -21,4 +21,4 @@ run: ## Nothing to RUN yet
 		-e LOG_LEVEL=$(LOG_LEVEL) \
 		-v ${PWD}/config.js:/usr/src/app/config.js \
 		-v ${PWD}/repos.json:/usr/src/app/repos.json \
-		$(CI_RENOVATE_IMAGE) renovate --dry-run=false
+		$(CI_RENOVATE_DOCKER) renovate --dry-run=false

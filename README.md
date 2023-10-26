@@ -3,6 +3,8 @@
 - [Source repo for helm-unittest](https://github.com/helm-unittest/helm-unittest)
 - [docker repo for helm-unittest](https://hub.docker.com/r/helmunittest/helm-unittest)
 
+- [Custom regex versioning scheme](https://docs.renovatebot.com/modules/versioning/)
+
 ---
 
 ![](https://img.shields.io/github/commit-activity/m/ik-workshop/renovate-issue-helmunittest)
