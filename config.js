@@ -21,7 +21,8 @@ module.exports = {
     {
       "matchDatasources": ["docker"],
       "matchPackageNames": ["helmunittest/helm-unittest"],
-      "versioning": "regex:^(?<compatibility>.*)-(?<major>\\d+)\.(?<minor>\\d+)\.(?<patch>\\d+)$",
+      // "versioning": "regex:^(?<compatibility>.*)-(?<major>\\d+)\.(?<minor>\\d+)\.(?<patch>\\d+)$",
+      "versioning": "loose",
       "prBodyDefinitions": {
         "Sources": "[Sources](https://github.com/helm-unittest/helm-unittest)"
       },
@@ -34,7 +35,11 @@ module.exports = {
     },
   ],
   "regexManagers": [
+
+  ],
+  "customManagers": [
     {
+      "customType": "regex",
       "description": "Update docker references in Makefile",
       "fileMatch": [".*"],
       "matchStrings": [
@@ -52,9 +57,5 @@ module.exports = {
       ],
       "datasourceTemplate": "docker"
     },
-
-  ],
-  "customManagers": [
-
   ]
 }
