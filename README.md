@@ -1,13 +1,16 @@
-# Renovate Blueprint
+# Renovate issue with helm-unittest versioning
+
+- [Source repo for helm-unittest](https://github.com/helm-unittest/helm-unittest)
+- [docker repo for helm-unittest](https://hub.docker.com/r/helmunittest/helm-unittest)
 
 ---
 
-![](https://img.shields.io/github/commit-activity/m/ik-workshop/renovate-issue-blueprint)
-![](https://img.shields.io/github/last-commit/ik-workshop/renovate-issue-blueprint)
+![](https://img.shields.io/github/commit-activity/m/ik-workshop/renovate-issue-helmunittest)
+![](https://img.shields.io/github/last-commit/ik-workshop/renovate-issue-helmunittest)
 [![](https://img.shields.io/github/license/ivankatliarchuk/.github)](https://github.com/ivankatliarchuk/.github/LICENCE)
-[![](https://img.shields.io/github/languages/code-size/ik-workshop/renovate-issue-blueprint)](https://github.com/ik-workshop/renovate-issue-blueprint)
-[![](https://img.shields.io/github/repo-size/ik-workshop/renovate-issue-blueprint)](https://github.com/ik-workshop/renovate-issue-blueprint)
-![](https://img.shields.io/github/languages/top/ik-workshop/renovate-issue-blueprint?color=green&logo=markdown&logoColor=blue)
+[![](https://img.shields.io/github/languages/code-size/ik-workshop/renovate-issue-helmunittest)](https://github.com/ik-workshop/renovate-issue-helmunittest)
+[![](https://img.shields.io/github/repo-size/ik-workshop/renovate-issue-helmunittest)](https://github.com/ik-workshop/renovate-issue-helmunittest)
+![](https://img.shields.io/github/languages/top/ik-workshop/renovate-issue-helmunittest?color=green&logo=markdown&logoColor=blue)
 
 ---
 
@@ -17,13 +20,33 @@
 
 ### Expected result
 
-## Create
-
-[**Create a repository using this template →**][template.generate]
-
 ## Resources
 
 ### Commands
+
+```sh
+$ skopeo list-tags --no-creds docker://docker.io/helmunittest/helm-unittest
+{
+    "Repository": "docker.io/helmunittest/helm-unittest",
+    "Tags": [
+        "3.11.1-0.3.0",
+        "3.11.2-0.3.0",
+        "3.11.2-0.3.1",
+        "3.11.3-0.3.1",
+        "3.11.3-0.3.2",
+        "3.12.0-0.3.2",
+        "3.12.0-0.3.3",
+        "3.12.1-0.3.3",
+        "3.12.1-0.3.4",
+        "3.12.2-0.3.3",
+        "3.12.2-0.3.4",
+        "3.12.2-0.3.5",
+        "3.12.3-0.3.4",
+        "3.12.3-0.3.5",
+        "latest"
+    ]
+}
+```
 
 ### Renovate Docs
 
@@ -37,7 +60,3 @@
 
 
 ---
-
-<!-- resources -->
-[template.generate]: https://github.com/ik-workshop/renovate-issue-blueprint/generate
-[code-style.badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square

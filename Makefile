@@ -4,7 +4,12 @@ SHELL = /bin/sh -o pipefail
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
 
-CI_RENOVATE_IMAGE := renovate/renovate:latest
+# CI_RENOVATE_IMAGE := renovate/renovate:37.33.3-full
+# try with 36.40.3-full
+CI_RENOVATE_IMAGE := renovate/renovate:36.40.3-slim
+
+DOCKER_HELM_UNITITEST_IMAGE := helmunittest/helm-unittest:3.12.0-0.3.3
+
 LOG_LEVEL := debug
 
 help:

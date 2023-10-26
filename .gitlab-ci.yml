@@ -1,0 +1,2 @@
+variables:
+  HELM_UNIT_TEST_IMAGE: helmunittest/helm-unittest:3.11.1-0.3.0

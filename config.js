@@ -17,14 +17,6 @@ module.exports = {
 
   ],
   "regexManagers": [
-    {
-      "description": "Update docker references in files",
-      "fileMatch": [".*"],
-      "matchStrings": [
-        "image:\n *repository: (?<depName>.*?)\n *tag: (?<currentValue>[a-z0-9.-]+)(?:@(?<currentDigest>sha256:[a-f0-9]+))?"
-      ],
-      "datasourceTemplate": "docker",
-      "versioningTemplate": "docker"
-    }
+
   ]
 }
